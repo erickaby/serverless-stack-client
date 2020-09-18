@@ -1,5 +1,6 @@
 export default {
   MAX_ATTACHMENT_SIZE: 5000000,
+  STRIPE_KEY: "pk_test_YImdT0OfpjQCmlM4mlGjYybd",
   s3: {
     REGION: "ap-southeast-2",
     BUCKET: "ricej008-notes-app-uploads"
@@ -15,4 +16,3 @@ export default {
     IDENTITY_POOL_ID: "ap-southeast-2:967af1c2-cd6c-4f05-ab04-b7984bcc703c"
   }
 };
-  
