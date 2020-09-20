@@ -6,6 +6,9 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Amplify } from 'aws-amplify';
 import config from './config';
+import { initSentry } from './libs/errorLib';
+
+initSentry();
 
 Amplify.configure({
   Auth: {
