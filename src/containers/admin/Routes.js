@@ -8,6 +8,8 @@ import UsersList from './users/List'
 import UsersCreate from './users/Create'
 import UsersView from './users/View'
 
+import GroupsList from './groups/List'
+
 export default function AdminRoutes() {
     let { path } = useRouteMatch();
 
@@ -24,6 +26,9 @@ export default function AdminRoutes() {
             </AuthenticatedRoute>
             <AuthenticatedRoute path={`${path}/user/:id`}>
                 <UsersView />
+            </AuthenticatedRoute>
+            <AuthenticatedRoute path={`${path}/groups`}>
+                <GroupsList />
             </AuthenticatedRoute>
         </Switch>
     );
